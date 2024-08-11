@@ -7,9 +7,9 @@ interface MessageProps {
 }
 
 const Messages = ({ messages }: MessageProps) => {
-  console.log(messages);
+ // console.log(messages);
   return (
-    <div className="flex max-h-[calc(100vh-3.5rem-7rem)] min-h-screen flex-1 flex-col overflow-y-auto bg-white">
+    <div className="flex min-h-screen flex-1 flex-col overflow-y-auto bg-white">
       {messages.length !== 0 ? (
         messages.map((message, i) => (
           <Message
